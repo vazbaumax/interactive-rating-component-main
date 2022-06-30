@@ -1,0 +1,133 @@
+.wrapper {
+	width: 375px;
+	min-width: 375px;
+	height: 667px;
+	padding: 0 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.rating-card {
+	background: radial-gradient(
+		199.04% 135.42% at 49.85% 0.14%,
+		#1e252f 0%,
+		rgba(23, 30, 40, 0) 100%
+	);
+	width: 88%;
+	border-radius: 2rem;
+	padding: 2.5rem;
+	max-width: 1440px;
+
+	&__header {
+		background-color: hsl(212, 17%, 20%);
+		width: 4rem;
+		height: 4rem;
+		padding: 1.2rem;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__icon {
+		width: 1.4rem;
+	}
+
+	&__title {
+		color: $white;
+		font-size: 2.1rem;
+		margin-top: 1.9rem;
+	}
+
+	&__description {
+		line-height: 2.2rem;
+		font-size: 1.2rem;
+		margin-top: 1.2rem;
+		line-height: 2.2rem;
+	}
+
+	&__ratings-box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 2.6rem;
+	}
+
+	&__rate {
+		background-color: hsl(212, 17%, 20%);
+		border: none;
+		padding: 10px;
+		border-radius: 50%;
+		width: 4.2rem;
+		height: 4.2rem;
+		color: $light-grey;
+		font-size: 1.3rem;
+		font-weight: 700;
+
+		&:hover {
+			background-color: $orange;
+			cursor: pointer;
+			color: $white;
+		}
+	}
+
+	&__submit-btn {
+		background-color: $orange;
+		border: none;
+		width: 100%;
+		border-radius: 4rem;
+		padding: 1.2rem;
+		text-transform: uppercase;
+		color: $white;
+		letter-spacing: 0.1rem;
+		margin-top: 2.5rem;
+
+		&:hover {
+			background-color: $white;
+			color: $orange;
+			cursor: pointer;
+			font-weight: 700;
+		}
+	}
+	&__rated {
+		color: $orange;
+		background-color: hsl(212, 17%, 20%);
+		width: fit-content;
+		border-radius: 1.5rem;
+		font-size: 1.4rem;
+		padding: 0.8rem;
+		margin-top: 2.4rem;
+		margin-bottom: 0.6rem;
+	}
+
+	&__content-2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
+		&__img {
+			width: 14.5rem;
+			margin-top: 1rem;
+		}
+
+		&__title {
+			font-size: 2.5rem;
+			font-weight: 700;
+		}
+		&__description {
+			font-size: 1.22rem;
+		}
+	}
+
+	.active {
+			background-color: $light-grey;
+			color: $white;
+		}
+
+	.hide {
+		display: none;
+	}
+}
